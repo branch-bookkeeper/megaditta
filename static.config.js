@@ -1,3 +1,5 @@
+import Document from './src/components/Document';
+
 export default {
     getSiteData: () => ({
         title: 'Branch Bookkeeper',
@@ -13,4 +15,6 @@ export default {
             component: 'src/containers/404',
         },
     ],
+
+    Document,
 };

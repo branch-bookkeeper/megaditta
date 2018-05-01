@@ -1,11 +1,20 @@
 import React from 'react';
 import { withSiteData } from 'react-static';
 
-import logoImg from '../logo.png';
+import Hero from '../components/sections/Hero';
+import Subscribe from '../components/sections/Subscribe';
+import Testimonials from '../components/sections/Testimonials';
+import Screenshots from '../components/sections/Screenshots';
+import Pricing from '../components/sections/Pricing';
+import Features from '../components/sections/Features';
 
 export default withSiteData(() => (
     <div>
-        <h1 style={{ textAlign: 'center' }}>Welcome to</h1>
-        <img src={logoImg} alt="" />
+        <Hero />
+        <Features />
+        <Pricing />
+        <Screenshots />
+        <Testimonials />
+        <Subscribe />
     </div>
 ));
