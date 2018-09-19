@@ -108,7 +108,6 @@ const Document = ({
             <script src="js/jquery-1.10.2.min.js" />
             <script src="js/jquery-migrate-1.2.1.min.js" />
 
-            <script src="js/jquery.flexslider.js" />
             <script src="js/jquery.waypoints.min.js" />
             <script src="js/jquery.fittext.js" />
             <script src="js/main.js" />
