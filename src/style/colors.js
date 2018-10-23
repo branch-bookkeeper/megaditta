@@ -16,3 +16,10 @@ export const bbOrange = {
     A400: '#ff9100',
     A700: '#ff6d00',
 };
+
+export const pageBackground = '#f5f5f5';
+export const text = 'rgba(0, 0, 0, 0.87)';
+
+export const buttonBackground = white;
+export const buttonHover = 'rgba(0, 0, 0, 0.12)';
+export const buttonText = text;

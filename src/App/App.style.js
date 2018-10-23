@@ -1,9 +1,19 @@
-import styled from 'styled-components';
+import styled, { injectGlobal } from 'styled-components';
 
-import { bbOrange, white } from 'style/colors';
+import {
+    bbOrange,
+    white,
+    pageBackground,
+} from 'style/colors';
 import Favicon from 'components/icons/Favicon';
 
 const headerHeight = '54px';
+
+injectGlobal`
+    body {
+        background-color: ${pageBackground};
+    }
+`;
 
 export const LogoWrapper = styled.div`
     && {
