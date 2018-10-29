@@ -38,11 +38,6 @@
 			$('.js .video .feature-media').addClass( 'animated pulse' );
 		}, { offset: 'bottom-in-view' });
 
-		$('.js #subscribe').waypoint(function() {
-			$('.js #subscribe input[type="email"]').addClass( 'animated fadeInLeftBig show' );
-			$('.js #subscribe input[type="submit"]').addClass( 'animated fadeInRightBig show' );
-		}, { offset: 'bottom-in-view' });
-
 		/*----------------------------------------------------*/
 		/* Highlight the current section in the navigation bar
 		------------------------------------------------------*/
