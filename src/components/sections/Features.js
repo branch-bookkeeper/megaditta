@@ -1,86 +1,96 @@
 import React from 'react';
+import styled from 'styled-components';
+
+import { gutterSmall } from 'style/gutter';
+import { text, white } from 'style/colors';
+
+const Root = styled.section`
+    &#features {
+        .speech-bubble-wrapper {
+            text-align: center;
+        }
+
+        .speech-bubble {
+            display: inline-block;
+            position: relative;
+            top: -20px;
+            background: ${text};
+            color: ${white};
+            border-radius: .4em;
+            padding: ${gutterSmall};
+            line-height: 1em;
+            margin: 0 auto;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8em;
+        }
+
+        .feature {
+            img {
+                height: 64px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+`;
 
 export default () => (
-    <section id="features">
-        <div className="row feature design">
-            <div className="six columns right">
-                <h3>Simple, Clean and Modern Design.</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, ea eum labitur scripserit, illum complectitur deterruisset at pro.
-                    Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his.
-                    Has molestie percipit an. Falli volumus efficiantur sed id, ad vel noster propriae.
-                    Ius ut etiam vivendo, graeci iudicabit constituto at mea.
-                    No soleat fabulas prodesset vel, ut quo solum dicunt.
-                    Nec et amet vidisse mentitum. Cibo mutat nulla ei eam.
-                </p>
-            </div>
-
-            <div className="six columns feature-media left">
-                <img src="images/feature-image-1.png" alt="" />
-            </div>
+    <Root id="features">
+        <div className="row section-head">
+            <h1>Extra features</h1>
         </div>
-
-        <div className="row feature responsive">
-            <div className="six columns left">
-                <h3>Fully Responsive.</h3>
-                <p>
-                    Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi
-                    enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu.
-                    Quis nostrum exercitationem ullam corporis suscipit laboriosam.
-                    Our library is continually refreshed with the latest on web technology
-                    so you&apos;ll never fall behind. Quis nostrum exercitationem ullam corporis suscipit laboriosam.
-                </p>
-            </div>
-
-            <div className="six columns feature-media right">
-                <img src="images/feature-image-2.png" alt="" />
-            </div>
-        </div>
-
-        <div className="row feature cross-browser">
-            <div className="six columns right">
-                <h3>Cross-Browser Compatible.</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, ea eum labitur scripserit, illum complectitur deterruisset at pro.
-                    Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his.
-                    Has molestie percipit an. Falli volumus efficiantur sed id, ad vel noster propriae.
-                    Ius ut etiam vivendo, graeci iudicabit constituto at mea.
-                    No soleat fabulas prodesset vel, ut quo solum dicunt.
-                    Nec et amet vidisse mentitum. Cibo mutat nulla ei eam.
-                </p>
-            </div>
-
-            <div className="six columns feature-media left">
-                <img src="images/feature-image-3.png" alt="" />
-            </div>
-        </div>
-
-        <div className="row feature video">
-            <div className="six columns left">
-                <h3>Video Support.</h3>
-                <p>
-                    Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi
-                    enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu.
-                    Quis nostrum exercitationem ullam corporis suscipit laboriosam.
-                    No soleat fabulas prodesset vel, ut quo solum dicunt.
-                    Nec et amet vidisse mentitum. Cibo mutat nulla ei eam.
-                </p>
-            </div>
-
-            <div className="six columns feature-media right">
-                <div className="fluid-video-wrapper">
-                    <iframe
-                        title="video"
-                        src="http://player.vimeo.com/video/14592941?title=0&amp;byline=0&amp;portrait=0&amp;color=F64B39"
-                        width="500"
-                        height="281"
-                        frameBorder="0"
-                        webkitallowfullscreen="webkitallowfullscreen"
-                        mozallowfullscreen="mozallowfullscreen"
-                        allowFullScreen
-                    />
+        <div className="row feature">
+            <div className="six columns">
+                <img src="images/check-circle.svg" alt="" />
+                <div className="speech-bubble-wrapper" style={{ visibility: 'hidden' }}>
+                    <div className="speech-bubble">Coming Soon</div>
                 </div>
+                <h3>Makes the wait easier</h3>
+                <p>
+                    On each push Branch Bookkeeper monitors the checks on your PR
+                    and sends you a notification when they&apos;re completed.
+                </p>
+            </div>
+
+            <div className="six columns">
+                <img src="images/users.svg" alt="" />
+                <div className="speech-bubble-wrapper">
+                    <div className="speech-bubble">Coming Soon</div>
+                </div>
+                <h3>Admins have the power</h3>
+                <p>
+                    All admins of a repository will automatically have more powers at their fingertips.
+                    Queue sorting, cleaning or locking - you name it!
+                </p>
             </div>
         </div>
-    </section>
+
+        <div className="row feature">
+            <div className="six columns coming-soon">
+                <img src="images/slack.svg" alt="" />
+                <div className="speech-bubble-wrapper">
+                    <div className="speech-bubble">Coming Soon</div>
+                </div>
+                <h3>Slack integration</h3>
+                <p>
+                    Are you a fan of Slack as much as we are? We&apos;ve got you covered.
+                    You&apos;ll soon be able to receive all your notifications in there too!
+                </p>
+            </div>
+
+            <div className="six columns coming-soon">
+                <img src="images/cpu.svg" alt="" />
+                <div className="speech-bubble-wrapper">
+                    <div className="speech-bubble">Coming Soon</div>
+                </div>
+                <h3>Automate all the things</h3>
+                <p>
+                    Configuring a webhook you can make your workflow react to any change in the queue.
+                    You can automatically rebase, merge or even deploy your code just monitoring the
+                    position in the queue of a PR.
+                </p>
+            </div>
+        </div>
+    </Root>
 );

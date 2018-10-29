@@ -20,25 +20,6 @@
     	$('.js #hero .hero-image img').addClass("animated fadeInUpBig");
 
 		/*----------------------------------------------------*/
-			/* Waypoints Animations
-		------------------------------------------------------ */
-		$('.js .design').waypoint(function() {
-			$('.js .design .feature-media').addClass( 'animated pulse' );
-		}, { offset: 'bottom-in-view' });
-
-		$('.js .responsive').waypoint(function() {
-			$('.js .responsive .feature-media').addClass( 'animated pulse' );
-		}, { offset: 'bottom-in-view' });
-
-		$('.js .cross-browser').waypoint(function() {
-			$('.js .cross-browser .feature-media').addClass( 'animated pulse' );
-		}, { offset: 'bottom-in-view' });
-
-		$('.js .video').waypoint(function() {
-			$('.js .video .feature-media').addClass( 'animated pulse' );
-		}, { offset: 'bottom-in-view' });
-
-		/*----------------------------------------------------*/
 		/* Highlight the current section in the navigation bar
 		------------------------------------------------------*/
 		var sections = $("section");
