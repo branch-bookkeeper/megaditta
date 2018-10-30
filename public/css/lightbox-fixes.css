@@ -1,0 +1,22 @@
+.ril-zoom-in {
+    display: none;
+}
+
+.ril-zoom-out {
+    display: none;
+}
+
+.ril-toolbar.ril__toolbar {
+    background: transparent;
+}
+
+.ril__toolbar .ril__toolbarRightSide {
+    padding: 0;
+}
+
+.ril-toolbar button {
+    margin-top: 0;
+    width: 64px;
+    height: 64px;
+    background-color: rgba(0, 0, 0, 0.2);
+}

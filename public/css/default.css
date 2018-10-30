@@ -48,14 +48,14 @@ d. Default Styles
    z-index: 99999;
    height: 100%;
 }
-#status  {    
+#status  {
    position: absolute;
    left: 50%;
    top: 50%;
    width: 64px;
    height: 64px;
-   margin: -32px 0 0 -32px;  
-   padding: 0;    
+   margin: -32px 0 0 -32px;
+   padding: 0;
 }
 
 /* ------------------------------------------------------------------
@@ -493,9 +493,9 @@ input[type="button"] {
    font: 14px/24px 'montserrat-bold', sans-serif;
    background: #11ABB0;
    color: #fff;
-   display: inline-block;   
+   display: inline-block;
 	text-decoration: none;
-   letter-spacing: 0;   
+   letter-spacing: 0;
 	padding: 12px 20px;
 	margin-bottom: 18px;
    border: none;
@@ -513,20 +513,20 @@ input[type="button"] {
    border-radius: 3px;
 }
 
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
+#root .button:hover,
+#root button:hover,
+#root input[type="submit"]:hover,
+#root input[type="reset"]:hover,
+#root input[type="button"]:hover {
    background: #14D0D6;
    color: #fff;
 }
 
-.button:active,
-button:active,
-input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="button"]:active {
+#root .button:active,
+#root button:active,
+#root input[type="submit"]:active,
+#root input[type="reset"]:active,
+#root input[type="button"]:active {
    background: #11ABB0;
    color: #fff;
 }
@@ -751,7 +751,7 @@ properly.
       padding: 0;
 	}
    .column, .columns {
-	   width: auto !important;      
+	   width: auto !important;
 	   float: none;
 	   margin-left: 0;
 	   margin-right: 0;

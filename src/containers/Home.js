@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { withSiteData } from 'react-static';
 
 import Hero from '../components/sections/Hero';
+import HowItWorks from '../components/sections/HowItWorks';
 import Pricing from '../components/sections/Pricing';
 import Features from '../components/sections/Features';
 import Subscribe from '../components/sections/Subscribe';
@@ -17,6 +18,7 @@ class Home extends Component {
         return (
             <div>
                 <Hero />
+                <HowItWorks />
                 <Features />
                 <Pricing />
                 <Subscribe />
