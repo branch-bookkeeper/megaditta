@@ -42,69 +42,6 @@ const Document = ({
 
             {children}
 
-            <footer>
-                <div className="row">
-                    <div className="six columns info">
-                        <div className="footer-logo">
-                            <a href="#">
-                                <img src="images/footer-logo.png" alt="" />
-                            </a>
-                        </div>
-
-                        <p>
-                            This is Photoshop&apos;s version  of Lorem Ipsum.
-                            Proin gravida nibh vel velit auctor aliquet.
-                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                            nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                        </p>
-                    </div>
-
-                    <div className="six columns right-cols">
-                        <div className="row">
-                            <div className="columns">
-                                <h3 className="address">Come Visit</h3>
-                                <p>
-                                    1600 Amphitheatre Parkway<br />
-                                    Mountain View, CA<br />
-                                    94043 US
-                                </p>
-                            </div>
-
-                            <div className="columns">
-                                <h3 className="social">socialize</h3>
-                                <ul>
-                                    <li><a href="#">Facebook</a></li>
-                                    <li><a href="#">Twitter</a></li>
-                                    <li><a href="#">GooglePlus</a></li>
-                                </ul>
-                            </div>
-
-                            <div className="columns last">
-                                <h3 className="contact">Contact Us</h3>
-                                <ul>
-                                    <li><a href="tel:6473438234">647.343.8234</a></li>
-                                    <li><a href="tel:1234567890">123.456.7890</a></li>
-                                    <li><a href="mailto:someone@woo.com">someone@woosite.com</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <p className="copyright">
-                        &copy; 2014 Woo | Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a>
-                    </p>
-
-                    <div id="go-top">
-                        <a className="smoothscroll" title="Back to Top" href="#hero"><i className="icon-up-open" /></a>
-                    </div>
-
-                </div>
-
-            </footer>
-
-
             <script src="js/jquery-1.10.2.min.js" />
             <script src="js/jquery-migrate-1.2.1.min.js" />
 

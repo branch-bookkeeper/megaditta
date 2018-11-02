@@ -4,7 +4,14 @@ import { hot } from 'react-hot-loader';
 
 import Routes from 'react-static-routes'; // eslint-disable-line import/no-unresolved,import/extensions
 
-import { Header, LogoWrapper, HeaderLogo } from './App.style';
+import {
+    Header,
+    LogoWrapper,
+    HeaderLogo,
+    Footer,
+    FooterLogo,
+    FooterTextLogo,
+} from './App.style';
 
 const toggleMenu = (ev) => {
     const { jQuery: $ } = window;
@@ -65,6 +72,36 @@ const App = () => (
             <div className="content">
                 <Routes />
             </div>
+
+            <Footer>
+                <div className="Footer-logo">
+                    <a className="smoothscroll" title="Back to Top" href="#hero">
+                        <FooterLogo />
+                        <FooterTextLogo />
+                    </a>
+                </div>
+
+                <p className="copyright">
+                    <span>&copy; {(new Date()).getFullYear()}</span>
+                    <a
+                        href="https://www.iubenda.com/privacy-policy/84405826"
+                        className="iubenda-black iubenda-embed"
+                        title="Privacy Policy"
+                    >
+                        Privacy Policy
+                    </a>
+                    <a
+                        href="https://status.branch-bookkeeper.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Status
+                    </a>
+                    <a href="mailto:info@branch-bookkeeper.com">
+                        Contact us
+                    </a>
+                </p>
+            </Footer>
         </div>
     </Router>
 );
