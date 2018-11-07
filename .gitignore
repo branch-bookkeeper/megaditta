@@ -6,6 +6,7 @@
 
 # production
 /dist
+/functions/dist
 /tmp
 
 # misc

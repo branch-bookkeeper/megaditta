@@ -16,5 +16,11 @@ export default {
         },
     ],
 
+    devServer: {
+        proxy: {
+            '/.netlify/functions': 'http://0.0.0.0:9000',
+        },
+    },
+
     Document,
 };
