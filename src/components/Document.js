@@ -18,11 +18,15 @@ const Document = ({
         <Head>
             <meta charSet="utf-8" />
             <title>Branch Bookkeeper</title>
-            <meta name="description" content="" />
-            <meta name="author" content="" />
 
+            <meta name="theme-color" content="#f96232" />
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
+            <link rel="manifest" href="manifest.json" />
+            <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+            <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+            <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png" />
+            <link rel="icon" type="image/png" sizes="512x512" href="favicon-512x512.png" />
             <link rel="stylesheet" href="css/default.css" />
             <link rel="stylesheet" href="css/layout.css" />
             <link rel="stylesheet" href="css/media-queries.css" />
@@ -30,8 +34,6 @@ const Document = ({
             <link rel="stylesheet" href="css/lightbox-fixes.css" />
 
             <script src="js/modernizr.js" />
-
-            <link rel="shortcut icon" href="favicon.png" />
         </Head>
         <Body>
             <div id="preloader">
