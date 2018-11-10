@@ -7,11 +7,17 @@ import Pricing from '../components/sections/Pricing';
 import Features from '../components/sections/Features';
 import Subscribe from '../components/sections/Subscribe';
 
+import GoogleAnalyticsContext from '../contexts/GoogleAnalyticsContext';
 import loadIubenda from '../lib/loadIubenda';
 
 class Home extends Component {
+    static contextType = GoogleAnalyticsContext;
+
     componentDidMount() {
+        const { pageview } = this.context;
+
         loadIubenda();
+        pageview('/');
     }
 
     render() {
@@ -26,5 +32,7 @@ class Home extends Component {
         );
     }
 }
+
+Home.contextType = GoogleAnalyticsContext;
 
 export default withSiteData(Home);

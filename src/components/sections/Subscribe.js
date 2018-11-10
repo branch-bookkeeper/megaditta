@@ -5,6 +5,7 @@ import isEmail from 'validator/lib/isEmail';
 import { breakpointMD } from 'style/mediaQuery';
 import { gutterBase, gutterLarge } from 'style/gutter';
 import { bbOrange, white, text } from 'style/colors';
+import GoogleAnalyticsContext from 'contexts/GoogleAnalyticsContext';
 
 const SUBSCRIBE_STATES = {
     notSubscribed: 'not-subscribed',
@@ -103,6 +104,8 @@ const Root = styled.section`
 `;
 
 class Subscribe extends Component {
+    static contextType = GoogleAnalyticsContext;
+
     state = {
         EMAIL: '',
         subscribeError: null,
@@ -112,6 +115,7 @@ class Subscribe extends Component {
     handleSubmit = (ev) => {
         const { jQuery } = window;
         const { EMAIL: email } = this.state;
+        const { event } = this.context;
 
         ev.preventDefault();
 
@@ -134,14 +138,26 @@ class Subscribe extends Component {
             }));
 
             request
-                .then(() => this.setState({
-                    subscribeState: SUBSCRIBE_STATES.subscribed,
-                    EMAIL: '',
-                }))
-                .catch(() => this.setState({
-                    subscribeState: SUBSCRIBE_STATES.subscribeError,
-                    subscribeError: 'Something went wrong, please try again.',
-                }));
+                .then(() => {
+                    event({
+                        category: 'Newsletter',
+                        action: 'Subscribe Success',
+                    });
+                    this.setState({
+                        subscribeState: SUBSCRIBE_STATES.subscribed,
+                        EMAIL: '',
+                    });
+                })
+                .catch(() => {
+                    event({
+                        category: 'Newsletter',
+                        action: 'Subscribe Error',
+                    });
+                    this.setState({
+                        subscribeState: SUBSCRIBE_STATES.subscribeError,
+                        subscribeError: 'Something went wrong, please try again.',
+                    });
+                });
         }
     }
 

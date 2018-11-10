@@ -1,4 +1,5 @@
 import React from 'react';
+import { OutboundLink } from 'react-ga';
 import styled from 'styled-components';
 
 import { bbOrange, text } from 'style/colors';
@@ -169,7 +170,13 @@ export default () => (
                     Branch Bookkeper is <strong>totally free for everyone</strong> while in beta.
                 </p>
                 <div className="plan-sign-up">
-                    <a className="button" href="https://get.branch-bookkeeper.com">Install Now</a>
+                    <OutboundLink
+                        className="button"
+                        eventLabel="Pricing Install Now"
+                        to="https://get.branch-bookkeeper.com"
+                    >
+                        Install Now
+                    </OutboundLink>
                 </div>
             </div>
         </div>

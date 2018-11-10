@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { OutboundLink } from 'react-ga';
 import styled from 'styled-components';
 
 import { bbOrange, buttonBackground, buttonText, buttonHover, text } from 'style/colors';
+import { Consumer as GoogleAnalyticsConsumer } from 'contexts/GoogleAnalyticsContext';
 
 const Root = styled.section`
     &#hero {
@@ -66,8 +68,28 @@ class Hero extends Component {
                         </div>
 
                         <div className="buttons">
-                            <a className="button trial" href="https://get.branch-bookkeeper.com">Install Now</a>
-                            <a className="button learn-more smoothscroll" href="#how-it-works">Learn More</a>
+                            <OutboundLink
+                                className="button trial"
+                                eventLabel="Hero Install Now"
+                                to="https://get.branch-bookkeeper.com"
+                            >
+                                Install Now
+                            </OutboundLink>
+                            <GoogleAnalyticsConsumer>
+                                {({ event }) => (
+                                    <a
+                                        className="button learn-more smoothscroll"
+                                        href="#how-it-works"
+                                        onClick={() => event({
+                                            category: 'Navigation',
+                                            action: 'Click',
+                                            label: 'Learn More',
+                                        })}
+                                    >
+                                        Learn More
+                                    </a>
+                                )}
+                            </GoogleAnalyticsConsumer>
                         </div>
 
                         <div className="hero-image">
