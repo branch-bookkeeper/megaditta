@@ -21,6 +21,15 @@ const Document = ({
 
             <meta name="theme-color" content="#f96232" />
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+            <meta name="description" content="Never lose the merge race again!" />
+            <meta property="og:image" content="https://branch-bookkeeper.com/og-image.jpg" />
+            <meta property="og:image:height" content="411" />
+            <meta property="og:image:width" content="785" />
+            <meta property="og:description" content="Never lose the merge race again!" />
+            <meta property="og:title" content="Branch Bookkeeper" />
+            <meta property="og:url" content="https://branch-bookkeeper.com" />
+            <meta property="og:type" content="website" />
+            <meta property="fb:app_id" content="1473105886116042" />
 
             <link rel="manifest" href="manifest.json" />
             <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -33,7 +42,6 @@ const Document = ({
             <link rel="stylesheet" href="css/animate.css" />
             <link rel="stylesheet" href="css/lightbox-fixes.css" />
             <link rel="stylesheet" href="css/cookiebar-fixes.css" />
-
             <script src="js/modernizr.js" />
         </Head>
         <Body>
