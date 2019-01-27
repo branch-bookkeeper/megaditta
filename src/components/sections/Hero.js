@@ -64,7 +64,7 @@ class Hero extends Component {
                                 If you lose, you’ve to rebase, wait for the CI checks to run again
                                 and hope to be ready before anyone else.
                             </p>
-                            <p>What if you could always win this race? Get <strong>Branch Bookeeper</strong>!</p>
+                            <p>What if you could always win this race? Get <strong>Branch Bookkeeper</strong>!</p>
                         </div>
 
                         <div className="buttons">
