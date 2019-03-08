@@ -29,7 +29,7 @@ const IMAGES = [
         caption: 'Now your PR is in queue to be merged, you can safely close the window and forget about it.',
     },
     {
-        url: 'images/walkthrough/notification.png',
+        url: 'images/walkthrough/notification.jpg',
         caption: 'When it\'s your turn, you\'ll receive a desktop notification. Click on it to go straight to your PR.',
     },
     {
