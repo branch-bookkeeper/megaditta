@@ -33,6 +33,7 @@
     "react-moment": "^0.7.0",
     "react-router": "^4.2.0",
     "react-static": "^5.7.3",
+    "script-loader": "^0.7.2",
     "styled-components": "^3.4.9",
     "validator": "^10.8.0"
   },

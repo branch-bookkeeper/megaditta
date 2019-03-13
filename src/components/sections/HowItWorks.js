@@ -231,9 +231,9 @@ class HowItWorks extends Component {
 
                 <div className="row screenshot">
                     <div className="twelve columns">
-                        <a href="images/walkthrough/notification.png" onClick={partial(this.handleImageClick, [3])}>
+                        <a href="images/walkthrough/notification.jpg" onClick={partial(this.handleImageClick, [3])}>
                             <img
-                                src="images/walkthrough/notification.png"
+                                src="images/walkthrough/notification.jpg"
                                 alt="Desktop notification from Branch Bookkeper reading 'PR is first in the queue'"
                             />
                         </a>
