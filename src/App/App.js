@@ -185,11 +185,26 @@ const App = () => (
                         >
                             Privacy Policy
                         </a>
+                    </p>
+                    <p className="copyright">
+                        <span>@bbkeepr on</span>
+                        <OutboundLink
+                            eventLabel="Facebook"
+                            to="https://www.facebook.com/bbkeepr/"
+                        >
+                            Facebook
+                        </OutboundLink>
+                        <OutboundLink
+                            eventLabel="Twitter"
+                            to="https://twitter.com/bbkeepr"
+                        >
+                            Twitter
+                        </OutboundLink>
+                    </p>
+                    <p className="copyright">
                         <OutboundLink
                             eventLabel="Status"
                             to="https://status.branch-bookkeeper.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
                         >
                             Status
                         </OutboundLink>
