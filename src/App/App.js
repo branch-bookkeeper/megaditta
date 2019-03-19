@@ -1,3 +1,20 @@
+import 'css/fonts.css';
+import 'css/font-awesome/css/font-awesome.css';
+import 'css/default.css';
+import 'css/layout.css';
+import 'css/media-queries.css';
+import 'css/animate.css';
+import 'css/lightbox-fixes.css';
+import 'css/cookiebar-fixes.css';
+
+import 'script-loader!js/jquery-1.10.2.min.js';
+import 'script-loader!js/jquery-migrate-1.2.1.min.js';
+
+import 'script-loader!js/jquery.waypoints.min.js';
+import 'script-loader!js/jquery.fittext.js';
+import 'script-loader!js/main.js';
+
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Router } from 'react-static';

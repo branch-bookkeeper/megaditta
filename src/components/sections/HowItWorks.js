@@ -29,7 +29,7 @@ const IMAGES = [
         caption: 'Now your PR is in queue to be merged, you can safely close the window and forget about it.',
     },
     {
-        url: 'images/walkthrough/notification.png',
+        url: 'images/walkthrough/notification.jpg',
         caption: 'When it\'s your turn, you\'ll receive a desktop notification. Click on it to go straight to your PR.',
     },
     {
@@ -173,7 +173,8 @@ class HowItWorks extends Component {
                     <div className="twelve columns">
                         <a href="images/walkthrough/github-red.png" onClick={partial(this.handleImageClick, [0])}>
                             <img
-                                src="images/walkthrough/github-red.png"
+                                src="images/walkthrough/github-red@1x.png"
+                                srcSet="images/walkthrough/github-red@2x.png 2x"
                                 alt="GitHub PR page with the Branch Bookkeeper check red, reading 'Not in the queue'"
                             />
                         </a>
@@ -192,7 +193,8 @@ class HowItWorks extends Component {
                     <div className="twelve columns">
                         <a href="images/walkthrough/bb-add-to-queue.png" onClick={partial(this.handleImageClick, [1])}>
                             <img
-                                src="images/walkthrough/bb-add-to-queue.png"
+                                src="images/walkthrough/bb-add-to-queue@1x.png"
+                                srcSet="images/walkthrough/bb-add-to-queue@2x.png 2x"
                                 alt="Branch Bookkeeper page showing a queue with one item and below that a PR card with an 'Add to queue' button"
                             />
                         </a>
@@ -211,7 +213,8 @@ class HowItWorks extends Component {
                     <div className="twelve columns">
                         <a href="images/walkthrough/bb-in-queue.png" onClick={partial(this.handleImageClick, [2])}>
                             <img
-                                src="images/walkthrough/bb-in-queue.png"
+                                src="images/walkthrough/bb-in-queue@1x.png"
+                                srcSet="images/walkthrough/bb-in-queue@2x.png 2x"
                                 alt="Branch Bookkeeper page showing a queue with two items"
                             />
                         </a>
@@ -231,9 +234,10 @@ class HowItWorks extends Component {
 
                 <div className="row screenshot">
                     <div className="twelve columns">
-                        <a href="images/walkthrough/notification.png" onClick={partial(this.handleImageClick, [3])}>
+                        <a href="images/walkthrough/notification.jpg" onClick={partial(this.handleImageClick, [3])}>
                             <img
-                                src="images/walkthrough/notification.png"
+                                src="images/walkthrough/notification@1x.jpg"
+                                srcSet="images/walkthrough/notification.jpg 2x"
                                 alt="Desktop notification from Branch Bookkeper reading 'PR is first in the queue'"
                             />
                         </a>
@@ -252,7 +256,8 @@ class HowItWorks extends Component {
                     <div className="twelve columns">
                         <a href="images/walkthrough/github-green.png" onClick={partial(this.handleImageClick, [4])}>
                             <img
-                                src="images/walkthrough/github-green.png"
+                                src="images/walkthrough/github-green@1x.png"
+                                srcSet="images/walkthrough/github-green@2x.png 2x"
                                 alt="GitHub PR page with the Branch Bookkeeper check green, reading 'First in the queue'"
                             />
                         </a>
