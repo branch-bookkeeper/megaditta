@@ -85,19 +85,11 @@ export const Footer = styled.footer`
 
     .copyright {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         & > *:not(:last-child) {
-            margin-top: ${gutterSmall};
-        }
-
-        @media only screen and (min-width: ${breakpointMD}) {
-            flex-direction: row;
-            & > *:not(:last-child) {
-                margin-top: 0;
-                margin-right: ${gutterSmall};
-            }
+            margin-right: ${gutterSmall};
         }
     }
 
