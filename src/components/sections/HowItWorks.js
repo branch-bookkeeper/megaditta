@@ -162,7 +162,7 @@ class HowItWorks extends Component {
                     <h1>How it works</h1>
 
                     <p>
-                        Branch Bookkeeper is a simple queue management system that will keep track of merge
+                        Branch Bookkeeper is a simple queue management system to keep track of merge
                         order for each PR and destination branch.
                         It integrates flawlessly in your existing workflow via its GitHub application.
                         Here&apos;s how it works:
