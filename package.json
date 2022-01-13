@@ -12,7 +12,7 @@
     "functions:build": "netlify-lambda build functions/src"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "gray-matter": "^3.1.1",
     "husky": "^1.1.2",
     "klaw": "^2.1.1",
